@@ -62,7 +62,7 @@ button{
   opacity: 0.8;
   cursor: pointer;
 }
-.hero {
+.banner {
   background-image: url("assets/Hero-bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -72,23 +72,23 @@ button{
   min-height: 652px;
   margin: 0 auto;
 }
-.hero-content {
+.banner-content {
   padding: 10px 190px;
 }
-.hero-title {
+.banner-title {
   color: rgb(13, 19, 33);
   font-size: 48px;
   font-weight: 800;
   line-height: 68px;
   margin-bottom: 20px;
 }
-.hero-description {
+.banner-description {
   color: rgb(13, 19, 33);
   opacity: 0.7;
   line-height: 26px;
   padding: 0px 80px;
 }
-.hero-btn {
+.banner-btn {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 600;
@@ -98,7 +98,7 @@ button{
   margin: 30px 0px 30px 0px;
   cursor: pointer;
 }
-a .hero-btn {
+a .banner-btn {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
