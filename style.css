@@ -7,12 +7,12 @@
 body {
   font-family: "Azeret Mono", monospace;
 }
-a{
-    color: rgb(13, 19, 33);
-font-weight: 700;
-line-height: 19px;
-text-align: left;
-text-decoration-line: underline;
+a {
+  color: rgb(13, 19, 33);
+  font-weight: 700;
+  line-height: 19px;
+  text-align: left;
+  text-decoration-line: underline;
 }
 .main {
   background-color: rgb(255, 255, 255);
@@ -34,8 +34,8 @@ text-decoration-line: underline;
   margin-bottom: 10px;
   padding: 0px 70px;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 /* header style start */
 .nav {
@@ -188,8 +188,8 @@ a .banner-btn {
 
 /* my current target section start */
 .my-current-target {
-    margin: 60px auto;
-    width: 1140px;
+  margin: 60px auto;
+  width: 1140px;
 }
 .traget-container {
   display: grid;
@@ -217,29 +217,27 @@ a .banner-btn {
   border-radius: 16px;
   background: rgba(255, 223, 0, 0.05);
 }
-.title{
-    color: rgb(13, 19, 33);
-font-size: 24px;
-font-weight: 800;
-line-height: 36px;
+.title {
+  color: rgb(13, 19, 33);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
 }
-.subtitle{
-    color: rgb(13, 19, 33);
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-opacity: 0.7;
-
+.subtitle {
+  color: rgb(13, 19, 33);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
 }
 /* my current target section end */
 
 /* my next target section start */
 .my-next-target {
-    margin: 60px auto;
-    width: 1140px;
+  margin: 60px auto;
+  width: 1140px;
 }
 .next-target-container {
-    
 }
 .react img {
   width: 94.78px;
@@ -255,16 +253,21 @@ opacity: 0.7;
   border-radius: 16px;
   background: rgb(255, 255, 255);
 }
-.target-content{
-    display: grid;
-    line-height: 26px;
-   gap: 20px;
+.target-content {
+  display: grid;
+  line-height: 26px;
+  gap: 20px;
 }
 /* my next target section end */
 
 /* support section starts here */
 .support {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/handshake.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/handshake.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -277,53 +280,54 @@ opacity: 0.7;
   align-items: center;
 }
 .support-content {
-    text-align: center;
-    padding: 20px 150px;
+  text-align: center;
+  padding: 20px 150px;
 }
-.support-content-title{
-    color: rgb(255, 255, 255);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 36px;
-    margin-bottom: 20px;
+.support-content-title {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 20px;
 }
-.support-content-subtitle{
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-    line-height: 26px;
-    opacity: 0.7;
-    padding: 0px 120px;
+.support-content-subtitle {
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 26px;
+  opacity: 0.7;
+  padding: 0px 120px;
 }
-input{
-    box-sizing: border-box;
-border: 1px solid rgba(13, 19, 33, 0.15);
-border-radius: 8px;
-background: rgb(255, 255, 255);
-width: 548px;
-height: 57px;
-padding: 19px 20px;
+input {
+  box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  width: 548px;
+  height: 57px;
+  padding: 19px 20px;
 }
-.input{
-    color: rgba(13, 19, 33, 0.4);
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
+.input {
+  color: rgba(13, 19, 33, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
-.input-content{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.input-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.support-btn{
-    border-radius: 8px;
-background: rgb(255, 255, 255);/* Frame 8 */
-width: 120px;
-height: 58px;
-padding: 17px 20px 17px 20px;
-color: rgb(13, 19, 33);
-font-size: 20px;
-font-weight: 600;
-line-height: 23px;
+.support-btn {
+  border-radius: 8px;
+  background: rgb(255, 255, 255); /* Frame 8 */
+  width: 120px;
+  height: 58px;
+  padding: 17px 20px 17px 20px;
+  color: rgb(13, 19, 33);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
 }
 /* support section ends here */
 
