@@ -1,34 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Azeret Mono", monospace;
 }
+a{
+    color: rgb(13, 19, 33);
+font-weight: 700;
+line-height: 19px;
+text-align: left;
+text-decoration-line: underline;
+}
 .main {
-    background-color: rgb(255, 255, 255);
-  }
+  background-color: rgb(255, 255, 255);
+}
 .section-content {
-    text-align: center;
-    border-radius: 16px;
-    padding: 50px 100px;
-  }
-  .section-title {
-    color: rgb(13, 19, 33);
-    font-size: 32px;
-    font-weight: 800;
-  }
-  .section-description {
-    color: rgb(13, 19, 33);
-    opacity: 0.7;
-    margin-bottom: 50px;
-    padding: 0px 70px;
-  }
-
+  text-align: center;
+  border-radius: 16px;
+  padding: 50px 100px;
+}
+.section-title {
+  color: rgb(13, 19, 33);
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.section-description {
+  color: rgb(13, 19, 33);
+  opacity: 0.7;
+  margin-bottom: 10px;
+  padding: 0px 70px;
+}
 
 /* header style start */
 .nav {
-  padding: 0px 80px;
+  padding: 30px 150px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
 }
 .nav-title {
   color: rgb(13, 19, 33);
@@ -40,17 +53,22 @@ body {
   color: rgb(13, 19, 33);
   font-size: 20px;
   font-weight: 600;
-  padding: 8px 22px;
+  padding: 17px 24px;
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(13, 19, 33);
   border-radius: 8px;
   opacity: 0.8;
+  cursor: pointer;
 }
 .hero {
   background-image: url("assets/Hero-bg.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  width: 100%;
+  max-width: 1440px;
+  min-height: 652px;
+  margin: 0 auto;
 }
 .hero-content {
   padding: 10px 190px;
@@ -59,114 +77,233 @@ body {
   color: rgb(13, 19, 33);
   font-size: 48px;
   font-weight: 800;
+  line-height: 68px;
+  margin-bottom: 20px;
 }
 .hero-description {
   color: rgb(13, 19, 33);
   opacity: 0.7;
+  line-height: 26px;
+  padding: 0px 80px;
 }
 .hero-btn {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 600;
   padding: 21px 24px;
-  line-height: 23px;
   border-radius: 8px;
   background-color: rgb(13, 19, 33);
   margin: 30px 0px 30px 0px;
+  cursor: pointer;
+}
+a .hero-btn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 /* header style end */
 
 /* why web section style start */
 .why-web-dev {
-    margin: 60px 150px;
-    border-radius: 16px;
-    background-color: rgba(13, 19, 33, 0.02);
-  }
-  .why-dev-container {
-    display: flex;
-    justify-content: space-between;
-    margin:  0px 150px 30px 150px;
-    padding: 10px 50px;
-    gap: 120px;
-    background-color: #fff;
-  }
-  .left{
-      
-  }
-  .right{
-  
-  }
-  /* why web section style end */
-  
-  /* my inspiration section start */
-  .my-inspiration{
-      margin: 60px 150px;
-  }
-  .video {
-      text-align: center;
-      padding: 20px;
-      border: 1px solid black;
-      border-radius: 20px;
-    }
-  
-  /* my inspiration section end */
-  
-  /* my current target section start */
-  .my-current-target {
-      margin: 0px 150px;
-     
-  }
-  .traget-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .html{
-      padding: 40px;
-      border-radius: 16px;
-      background: rgba(255, 76, 30, 0.05);
-  }
-  .css{
-      padding: 40px;
-      border-radius: 16px;
-      background: rgba(0, 76, 232, 0.05);
-  }
-  .js{
-      padding: 40px;
-      border-radius: 16px;
-      background: rgba(255, 223, 0, 0.05);
-  }
-  /* my current target section end */
-  
-  /* my next target section start */
-  .my-next-target {
-      margin: 60px 150px;
-    padding: 50px 10px;
-  }
-  
-  .react {
-    display: flex;
-  }
-  
-  /* my next target section end */
-  
-  
-  .support {
-    background-image: url("assets/handshake.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin: 60px 150px;
+  border-radius: 16px;
+  background-color: rgba(13, 19, 33, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+.why-dev-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 150px 30px 150px;
+  padding: 50px;
+  gap: 120px;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.why-dev-content-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 150px 30px 150px;
+  padding: 50px;
+  gap: 120px;
+  border-radius: 16px;
+  background: linear-gradient(
+    -90deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.leftside-content-title {
+  color: rgba(13, 19, 33, 0.7);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.leftside-content-subtitle {
+  line-height: 26px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.leftside-content-btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(13, 19, 33);
+  opacity: 0.7;
+  padding: 12px 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 19, 33);
+  font-size: 20px;
+  font-weight: 600;
+}
+/* why web section style end */
+
+/* my inspiration section start */
+.my-inspiration {
+  margin: 60px 190px;
+}
+.youtube-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+  border-radius: 16px;
+}
+.youtube-video iframe {
+  border-radius: 16px;
+}
+
+/* my inspiration section end */
+
+/* my current target section start */
+.my-current-target {
+  margin: 0px 150px;
+}
+.traget-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.html {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(255, 76, 30, 0.05);
+}
+.css {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(0, 76, 232, 0.05);
+}
+.js {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(255, 223, 0, 0.05);
+}
+/* my current target section end */
+
+/* my next target section start */
+.my-next-target {
+  margin: 10px 150px;
+  padding: 50px 10px;
+}
+.next-target-container {
+    
+}
+.react img {
+  width: 94.78px;
+  height: 108px;
+}
+.target {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+/* my next target section end */
+
+/* support section starts here */
+.support {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/handshake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1140px;
+  height: 314px;
+  margin: 0 auto;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-content {
     text-align: center;
-    padding: 100px;
-  }
-  
-  .footer {
-    margin-top: 80px;
-    border-radius: 16px;
-  
-    background: rgba(13, 19, 33, 0.03);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 100px;
-  }
-  
+    padding: 20px 150px;
+}
+.support-content-title{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.support-content-subtitle{
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 26px;
+    opacity: 0.7;
+    padding: 0px 120px;
+}
+input{
+    box-sizing: border-box;
+border: 1px solid rgba(13, 19, 33, 0.15);
+border-radius: 8px;
+background: rgb(255, 255, 255);
+width: 548px;
+height: 57px;
+padding: 19px 20px;
+}
+.input{
+    color: rgba(13, 19, 33, 0.4);
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+}
+.support-btn{
+    border-radius: 8px;
+background: rgb(255, 255, 255);/* Frame 8 */
+width: 120px;
+height: 58px;
+padding: 17px 20px 17px 20px;
+color: rgb(13, 19, 33);
+font-size: 20px;
+font-weight: 600;
+line-height: 23px;
+}
+/* support section ends here */
+
+#footer {
+  margin-top: 80px;
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 100px;
+}
