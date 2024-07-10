@@ -309,6 +309,11 @@ font-size: 16px;
 font-weight: 400;
 line-height: 19px;
 }
+.input-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .support-btn{
     border-radius: 8px;
 background: rgb(255, 255, 255);/* Frame 8 */
